@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+li {
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    /* width: 90%; */
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+h2 {
+    color: #6d708d;
+    font-size: 200%;
+}
+
+.pricing__component {
+    background: url(../images/bg-top.svg) top right no-repeat,
+                url(../images/bg-bottom.svg) bottom left no-repeat;
+    height: 100vh;
+    background-color: #f6f6fe;
+}
+
+/* 
+TOGGLE SECTION
+*/
+.top__label {
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.toggle__section {
+    color: #b3b5c6;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle__btn:link,
+.toggle__btn:visited {
+    display: inline-block;
+    height: 25px;
+    width: 45px;
+    margin: 0 20px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #a3a8f0,#696fdd);
+}
+
+.toggle__btn:hover,
+.toggle__btn:active {
+    background: linear-gradient(to right, #a3a8f0,#a3a8f0);
+}
+
+.toggle__btn--monthly {
+    background: linear-gradient(to left, #a3a8f0,#696fdd);
+}
+
+.toggle__controller {
+    background-color: #f6f6fe;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    float: left;
+    margin: 3.5px 3px;
+}
+
+.toggle__controller--monthly {
+    float: right;
+}
+
+/* 
+PRICE CARDS
+*/
+
+.pricing__cards{
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color:#494c5f;
+    margin: 0;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.price {
+    font-size: 400%;
+    margin: 0 auto;
+    line-height: 120px;
+    border-bottom: 1px solid #494c5f;
+}
+
+.learn__more:link,
+.learn__more:visited{
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(to right, #a3a8f0,#696fdd);
+    color: #ffffff;
+    border-radius: 5px;
+    line-height: 40px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.learn__more:hover,
+.learn__more:active {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    color: #6d708d;
+    border: 1px solid #6d708d;
+}
+
+.professional__card{
+    background: linear-gradient(to right, #696fdd,#696fdd);
+    color: #ffffff;
+    padding: 3rem 1.5rem;
+}
+
+.professional__card .price {
+    border-bottom: 1px solid #ffffff;
+}
+
+.highlighted:link,
+.highlighted:visited{
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    color: #6d708d;
+    background-clip: text;
+}
+
+.highlighted:hover,
+.highlighted:active{
+    background: linear-gradient(to right, #696fdd,#696fdd);
+    color: #ffffff;
+    border: 1px solid #ffffff;    
+}
+
+
+/* 
+SCROLLL BAR
+*/
+body::-webkit-scrollbar {
+width: 1.5em;
+background-color: #f6f6fe;
+}
+
+
+body::-webkit-scrollbar-thumb {
+background: linear-gradient(to bottom,  #a3a8f0,#696fdd);
+border-radius: 1.5rem;
+}
+
+@media only screen and (max-width: 910px){
+    .pricing__component {
+        height: max-content;
+    }
+
+    .pricing__cards{
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px auto;
+    }
+
+    .professional__card{
+        padding: 2rem 1rem;
+    }
+}
